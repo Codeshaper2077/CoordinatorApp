@@ -14,6 +14,9 @@ enum Event {
 protocol Coordinator {
     var navigationController: UINavigationController? { get set }
     
+    var children: [Coordinator]? { get set }
+    
+    
     func eventOccured(with type: Event) //
     
     func start() // the call after the start of the application or coordinator
