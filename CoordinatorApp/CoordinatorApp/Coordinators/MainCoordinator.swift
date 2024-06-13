@@ -8,6 +8,8 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
+    var children: [Coordinator]? = nil
+    
     var navigationController: UINavigationController?
     
     func eventOccured(with type: Event) {

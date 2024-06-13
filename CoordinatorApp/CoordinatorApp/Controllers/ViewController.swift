@@ -24,7 +24,8 @@ class ViewController: UIViewController, Coordinating {
         button.setTitleColor(.white, for: .normal)
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-        
+        button.setTitleColor(.white, for: .normal)
+        button.setTitle("Tap Me!", for: .normal)
         
     }
     @objc func didTapButton() {
