@@ -15,6 +15,13 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
+        var vc: UIViewController & Coordinating = ViewController()
+        vc.coordinator = self
+//        if let coordinatingVC = vc as? Coordinating {
+//            coordinatingVC.coordinator = self
+//        }
+        
+        navigationController?.setViewControllers([vc], animated: false) // app launch
         
     }
     
